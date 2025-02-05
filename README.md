@@ -18,7 +18,7 @@ Before running this pipeline, ensure that the following programs are installed:
 
 ---
 
-## 🚀 How to Use (사용 방법)
+## 🚀 How to Use 
 
 ### 1️⃣ Download the pipeline
 Clone this repository:
