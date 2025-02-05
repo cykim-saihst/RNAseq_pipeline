@@ -1,4 +1,3 @@
-```md
 # 🧬 RNAseq Pipeline using Bowtie2
 
 This pipeline processes RNA-seq data using **Bowtie2**.  
@@ -19,7 +18,6 @@ Before running this pipeline, ensure that the following programs are installed:
 
 ---
 
-```md
 ## 🚀 How to Use (사용 방법)
 
 ### 1️⃣ Download the pipeline
@@ -87,4 +85,3 @@ bash command/main_bowtie2.sh
 ## 👨‍💻 Author
 Developed by **[Chaeyeon Kim]**  
 GitHub: [cykim-saihst](https://github.com/cykim-saihst/)
-```
