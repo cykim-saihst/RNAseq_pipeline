@@ -3,6 +3,9 @@
 This pipeline processes RNA-seq data using **Bowtie2**.  
 Supports **mouse (Mus musculus) and human (Homo sapiens) genomes**.
 
+📖 **Need a step-by-step tutorial?**  
+For a detailed explanation and practical walkthrough, please refer to the following Notion page:  
+👉 [RNA-seq with Bowtie2 – Full Tutorial](https://lapis-stilton-259.notion.site/RNA-seq-with-Bowtie2-1c337172436b80afa409d1a9f165e313?pvs=4)
 ---
 
 ## 📥 Installation 
