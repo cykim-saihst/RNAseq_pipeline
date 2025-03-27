@@ -15,15 +15,11 @@ samtools view -@ ${thread} -h -q 20 -F 0x4 -o $name/${name}_sorted_Qcut_mapped.b
 samtools fixmate -@ ${thread} -m $name/${name}_sorted_Qcut_mapped.bam $name/${name}_sorted_Qcut_mapped_fixmate.bam
 
 # Sort BAM by coordinate
-samtools sort -@ ${thread} -o $name/${name}_sorted_Qcut_mapped_fixmate_sorted.bam $name/${name}_sorted_Qcut_mapped_fixmate.bam
+samtools sort -@ ${thread} -o $name/${name}_final.bam $name/${name}_sorted_Qcut_mapped_fixmate.bam
 
-# Mark duplicates (do not remove)
-samtools markdup -@ ${thread} -s $name/${name}_sorted_Qcut_mapped_fixmate_sorted.bam $name/${name}_markdup_flagged.bam
+# Remove duplicates
+#samtools markdup -@ ${thread} -r -s $name/${name}_sorted_Qcut_mapped_fixmate_sorted.bam $name/${name}_final.bam
 
-# Remove marked duplicates using flag
-samtools view -@ ${thread} -h -F 0x400 -o $name/${name}_final.bam $name/${name}_markdup_flagged.bam
-
-rm $name/${name}_markdup_flagged.bam
 cd ..
 
 # Run quality control
