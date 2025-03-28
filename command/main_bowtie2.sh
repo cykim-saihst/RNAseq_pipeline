@@ -85,4 +85,4 @@ while read -r input1 input2 input3 || [ -n "$input1" ] || [ -n "$input2" ] || [ 
   bash command/RNAseq_bowtie2.sh "$input1" "$input2" "$input3"
 done < "$input_file"
 
-Rscript command/merge_output.R
+Rscript command/merge_output.R "$input_file"
