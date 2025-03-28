@@ -2,7 +2,10 @@
 
 library(dplyr)
 
-input = read.table("input/input.txt", header=FALSE);
+args <- commandArgs(trailingOnly=TRUE)
+input_file <- args[1]
+
+input <- read.table(input_file, header=FALSE)
 names = input[,1];
 path = paste0("output/",input[,1],"_counts.csv");
 path = as.data.frame(path);
