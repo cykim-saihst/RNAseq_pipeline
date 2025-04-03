@@ -17,7 +17,7 @@ Before running this pipeline, ensure that the following programs are installed:
 - **Samtools**: `samtools`
 - **FeatureCounts** (from `subread` package)
 - **FastQC** & **MultiQC** (for quality control)
-- **R**: Required for merging counts (`merge_output.R`)
+- **R(dplyr)**: Required for merging counts (`merge_output.R`)
 
 ---
 
